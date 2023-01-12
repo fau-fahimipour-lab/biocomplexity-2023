@@ -144,13 +144,13 @@ by adding 10%.
 ```r
 bogusMean = function(x, cheat){
 	## Add up all of my sales to get a total
-  totalSales = sum(x)
-  ## Calculate the number of sales I had
+	totalSales = sum(x)
+	## Calculate the number of sales I had
 	numberOfSales = length(x)
-  ## Calculate the actual average sale amount
-  trueMean = totalSales / numberOfSales
+	## Calculate the actual average sale amount
+	trueMean = totalSales / numberOfSales
 	fakeMean = (1 + cheat) * trueMean
-  return(fakeMean)
+	return(fakeMean)
 }
 ```
 
