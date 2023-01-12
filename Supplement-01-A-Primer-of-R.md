@@ -63,7 +63,7 @@ x = c(1, 2, 3, 4)
 Like many programming languages, there's more than one way to do everything.
 
 ```r
-x = 1:4
+y = 1:4
 z = seq(from = 1, to = 4, by = 1)
 ```
 Which one (if any) of `x`, `y`, or `z` are different? *Hint:* what happens when you evaluate `x == y`?  
