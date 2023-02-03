@@ -170,7 +170,7 @@ We can make a matrix like this:
 A = matrix(          ## call the `matrix` function to indicate that I want to make a matrix
     c(1, 2, 3, 4),   ## specify the values in each cell of my matrix
     nrow = 2,        ## indicate that my matrix has 2 rows
-    by.row = TRUE    ## indicate that I want to fill in my matrix by row
+    byrow = TRUE     ## indicate that I want to fill in my matrix by row
 )                    ## close the parentheses on `matrix`
 ```
 
@@ -182,7 +182,7 @@ We can do tons of things with matrices.
 2 * A
 
 ## Add and multiply elements in a matrix together
-B = matrix(c(5, 6, 7, 8), nrow = 2, by.row = FALSE) ## Note: see what happens with FALSE here?
+B = matrix(c(5, 6, 7, 8), nrow = 2, byrow = FALSE) ## Note: see what happens with FALSE here?
 A + B
 A * B
 
