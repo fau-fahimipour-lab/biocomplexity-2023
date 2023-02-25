@@ -17,6 +17,12 @@ G = read.graph('~/Downloads/lesmis/lesmis.gml', format = 'gml')
 ## Grab the adjacency matrix, we will need this later...
 A = as.matrix(get.adjacency(G))
 
+## Also remember that the number of rows in the adjacency is equal to the number of nodes
+nrow(A)
+
+## Further remember that the total number of 1s in the adjacency equals the number of links
+sum(A)
+
 ## Set the layout for the graph plot
 myLayout = layout_with_fr(G)
 
