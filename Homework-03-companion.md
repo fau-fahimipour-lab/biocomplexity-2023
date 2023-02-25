@@ -101,7 +101,8 @@ simulateOneNetwork = function(A, initialFractionInfected, simulationTime){
 ```
 
 Now I want to run 500 iterations of this simulation, save the results, and plot them.
-I will plot them as a histogram, which shows 
+I will plot them as a histogram, which shows the distribution of final infection states
+across all of my simulations. I've marked the average with a red line.
 
 ```r
 ## It works! Now I want to perform N simulations.
@@ -125,4 +126,5 @@ hist(results$finalFraction, breaks = 15)
 
 ## What is the average final infection state for all 500 simulations?
 mean(results$finalFraction)
+abline(v = mean(results$finalFraction), col = 'darkred', lwd = 2)
 ```
